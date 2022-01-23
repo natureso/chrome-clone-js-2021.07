@@ -8,5 +8,8 @@ function getClock() {
     clock.innerText = `${hours}:${minutes}:${seconds}`;
 }
 
-getClock()
+// "1".padStart(2,"0") => "01" 
+// "1" 이 string이 2자리 수가 아니면 string 앞에 "0"이라는 string을 추가해줌 (뒤에 추가: padEnd)
+
+getClock();
 setInterval(getClock, 1000);
